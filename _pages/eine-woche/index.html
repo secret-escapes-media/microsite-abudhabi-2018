@@ -1,0 +1,102 @@
+---
+layout: default
+id: eine-woche
+title: Eine Woche Abu Dhabi
+intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quo aspernatur nemo totam optio, similique ipsum unde consectetur tempore quae autem earum quidem placeat, harum, deleniti voluptatem pariatur ratione cumque.
+nav: true
+nav-order: 3
+banner:
+  title: Eine Woche Abu Dhabi
+  title-sub: Lifestyle zwischen Dünen & Oasen
+content-pages: true
+
+features:
+
+  - id: one
+    title: Tag 1
+    subtitle: Shoppen & Genießen
+    img: day1
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore suscipit, nam sit reprehenderit doloribus non dolore voluptatem autem ex adipisci, eius quibusdam placeat earum magnam aspernatur magni aut, doloremque rerum.
+    link: "#one-link"
+
+  - id: two
+    title: Tag 2
+    subtitle: Wunder der Wüste
+    img: day2
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore suscipit, nam sit reprehenderit doloribus non dolore voluptatem autem ex adipisci, eius quibusdam placeat earum magnam aspernatur magni aut, doloremque rerum.
+    link: "#two-link"
+
+  - id: three
+    title: Tag 3
+    subtitle: Vollgas auf Yas-Island
+    img: day3
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore suscipit, nam sit reprehenderit doloribus non dolore voluptatem autem ex adipisci, eius quibusdam placeat earum magnam aspernatur magni aut, doloremque rerum.
+    link: "#three-link"
+
+  - id: four
+    title: Tag 4
+    img: day4
+    subtitle: Alte & neue Kulturschätze
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore suscipit, nam sit reprehenderit doloribus non dolore voluptatem autem ex adipisci, eius quibusdam placeat earum magnam aspernatur magni aut, doloremque rerum.
+    link: "#four-link"
+
+  - id: five
+    title: Tag 5
+    subtitle: UNESCO-Anmut in Al Ain
+    img: day5
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore suscipit, nam sit reprehenderit doloribus non dolore voluptatem autem ex adipisci, eius quibusdam placeat earum magnam aspernatur magni aut, doloremque rerum.
+    link: "#five-link"
+
+  - id: six
+    title: Tag 6
+    subtitle: Wunder der Wüste
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore suscipit, nam sit reprehenderit doloribus non dolore voluptatem autem ex adipisci, eius quibusdam placeat earum magnam aspernatur magni aut, doloremque rerum.
+    link: "#six-link"
+
+
+thumnails:
+
+
+---
+
+<div class="bg--light vpad--xxl">
+  <div class="container">
+    <div class="width width--lg text--center text--xl">
+      <p>{{page.intro}}</p>
+    </div>
+  </div>
+</div>
+
+{% include nav/page.html content=page.features %}
+
+{% for feature in page.features %}
+  <div class="{% cycle 'bg--white', 'bg--light' %}">
+    <div class="container">
+      <div id="{{feature.id}}" class="vpad--md">
+        <div class="vpad--xxl width width--xl text--center">
+          <h2 class="title title--xl">{{feature.title}}</h2>
+          <div class="space--lg"></div>
+        <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{feature.img}}.jpg')"></div>
+        <div class="space--lg"></div>
+            <h4 class="title title--md">{{feature.subtitle}}</h4>
+          <p>{{feature.description}}</p>
+          <div class="space--lg"></div>
+          <div class="row row--gutters-md">
+            <!-- thumbnails /-->
+                <div class="col col--lg-6 col--xxl-4 text--center">
+                <div class="pt-highlight-shadow">
+                  <div class="highlight__image bg-img bg-img--16-9" style="background-image:url('{{site.img}}/content/{{page.id}}/highlight3.jpg');"></div>
+                  <div class="highlight__text boxpad--lg bg--white">
+                  <h4 class="core-title core-title--xs text--bold text--upper">Geotourismus</h4>
+                  <div class="space--xs"></div>Das geologische Erbe der Azoren schickt Sie auf eine Zeitreise zur...<br>
+                  <div class=" text--bold">Mehr erfahren</div>
+                </div>
+              </div>
+              </div>
+          </div>
+        <!--  <a href="{{feature.link}}" class="btn btn--sm btn--orange">Zu den Angeboten</a>-->
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}

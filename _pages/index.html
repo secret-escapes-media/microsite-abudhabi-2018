@@ -4,44 +4,62 @@ id: overview
 nav: true
 nav-order: 1
 title: Übersicht
+intro: Eine moderne Oase am Persischen Golf, eingerahmt von spektakulären Mangrovenlandschaften, majestätischen Wüsten und exotischen Bilderbuchstränden – wie geschaffen für eine märchenhaft orientalische Auszeit voll futuristischer Highlights und architektonischer Superlative. Erleben Sie eine dynamische Metropole, in der Träume glamouröse Wirklichkeit werden bei einem kultivierten Citytrip oder einem exklusiven Strandurlaub zwischen Dünen und Mangroven.
+
 banner:
   title: Abu Dhabi
   title-sub: Ein glamouröses Märchen aus 1001 Nacht
 
-intro: this is my home page
+
 ---
 
-<div class="container vpad--xxl">
 
-  <div class="title title--lg text--center">Bob layout</div>
+
+<div class="bg--light vpad--xxl">
+  <div class="container">
+    <div class="width width--lg text--center text--xl">
+      <p>{{page.intro}}</p>
+    </div>
+  </div>
+</div>
+
+<div class="vpad--xxl " >
+
+  <div class="container">
 
   <div class="space--lg"></div>
 
-  <div class="bob">
+  <div class="bob" >
     <div class="bob__img">
       <a href="#image-link">
-        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
+        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/overview/overview1.jpg');"></div>
       </a>
     </div>
-    <div class="bob__text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam officia voluptatem officiis magnam perferendis iste dolor dolore ipsa illo non pariatur cumque quod delectus nostrum rem facilis! Ipsum, nostrum debitis illum voluptas ad molestias. Dolor repellendus atque aut magni sapiente nam et quas consectetur nulla nemo tempore, alias, quae eius obcaecati voluptas, quos neque, inventore minima officiis reprehenderit ullam. Asperiores adipisci possimus inventore quia odit aliquam incidunt commodi iste explicabo dolore impedit consequuntur temporibus iusto dolor repudiandae at tempore repellendus, atque hic accusantium doloribus placeat. Dolores provident tempore molestias laborum ad repudiandae.</p>
+    <div class="bob__text" >
+      <div class="title title--md ">48 Stunden Abu Dhabi</div>
+      <p>In einer schillernden Wüstenmetropole wie Abu Dhabi lockt jede Tageszeit mit maßgeschneiderten Reizen. Ob morgendliche Spaziergänge über farbenfrohe Souks, eine mondäne Shoppingtour zur Mittagszeit oder ein romantischer Sonnenuntergang mit Skyline-Panorama – hier wird der Stopover zum facettenreichen Spektakel. </p>
+        <div class="space--md"></div>
+      <div class=""><a href="" ><button class="abu-button">Mehr entdecken</button></a></div>
     </div>
   </div>
   <div class="bob bob--swap">
     <div class="bob__img">
       <a href="#image-link">
-        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
+        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/overview/overview2.jpg');"></div>
       </a>
     </div>
     <div class="bob__text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam officia voluptatem officiis magnam perferendis iste dolor dolore ipsa illo non pariatur cumque quod delectus nostrum rem facilis! Ipsum, nostrum debitis illum voluptas ad molestias. Dolor repellendus atque aut magni sapiente nam et quas consectetur nulla nemo tempore, alias, quae eius obcaecati voluptas, quos neque, inventore minima officiis reprehenderit ullam. Asperiores adipisci possimus inventore quia odit aliquam incidunt commodi iste explicabo dolore impedit consequuntur temporibus iusto dolor repudiandae at tempore repellendus, atque hic accusantium doloribus placeat. Dolores provident tempore molestias laborum ad repudiandae.</p>
+       <div class="title title--md">1 Woche Abu Dhabi</div>
+      <p>Fata Morgana oder wahr gewordener Traum? Wer sich die Zeit nimmt, das Emirat Adu Dhabi in seinem ganzen Facettenreichtum zu erkunden, wird in Staunen versetzt. Visionärer Pioniergeist neben jahrtausendealter Beduinen-Tradition, kompromissloser Luxus und kosmopolitischer Glamour – willkommen in einer Realität aus 1001 Nacht. </p>
+      <div class="space--md"></div>
+    <div class=""><a href="" ><button class="abu-button">Mehr entdecken</button></a></div>
     </div>
   </div>
-
 </div>
+</div>
+<!--
 
 <div class="title title--lg vpad--lg text--center">Harvey layout</div>
-
 <div class="harvey">
   <div class="harvey__img" style="background-image: url({{site.img}}/img.jpg);">
     <a class="harvey__link" href="#image-link"></a>
@@ -59,3 +77,11 @@ intro: this is my home page
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam officia voluptatem officiis magnam perferendis iste dolor dolore ipsa illo non pariatur cumque quod delectus nostrum rem facilis! Ipsum, nostrum debitis illum voluptas ad molestias. Dolor repellendus atque aut magni sapiente nam et quas consectetur nulla nemo tempore, alias, quae eius obcaecati voluptas, quos neque, inventore minima officiis reprehenderit ullam. Asperiores adipisci possimus inventore quia odit aliquam incidunt commodi iste explicabo dolore impedit consequuntur temporibus iusto dolor repudiandae at tempore repellendus, atque hic accusantium doloribus placeat. Dolores provident tempore molestias laborum ad repudiandae.</p>
   </div>
 </div>
+-->
+
+<div class="space--xxl"></div>
+<div class="container container--xl text--center">
+<div class="core-title core-title--xl ">Angebote</div>
+</div>
+
+  {% include offer/all-offers.html %}

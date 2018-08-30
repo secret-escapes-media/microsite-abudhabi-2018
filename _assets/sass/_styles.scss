@@ -1,1 +1,26 @@
 // general styles for the project that wouldn't be a reuseable component
+
+.abu-text-shadow {
+    text-shadow: 0px 0px 15px #000;
+}
+
+.abu-banner-margin-top{
+
+  margin-top:-200px;
+}
+
+
+/*style="background-image: url('{{site.img}}/content/{{page.id}}/hero.jpg'); background-attachment:fixed; background-color:rgba(0,0,0,0.8);"*/
+
+.abu-button{
+  background-color: rgba(228, 3, 42, 0.75);
+    border-radius: 2px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    transition: all ease 0.4s;
+    border: none;
+    padding: 16px 28px;
+    cursor: pointer
+}

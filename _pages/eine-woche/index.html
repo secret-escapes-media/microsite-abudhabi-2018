@@ -2,7 +2,7 @@
 layout: default
 id: eine-woche
 title: Eine Woche Abu Dhabi
-intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quo aspernatur nemo totam optio, similique ipsum unde consectetur tempore quae autem earum quidem placeat, harum, deleniti voluptatem pariatur ratione cumque.
+intro: Fata Morgana oder wahr gewordener Traum? Wer sich die Zeit nimmt, das Emirat Adu Dhabi in seinem ganzen Facettenreichtum zu erkunden, wird in Staunen versetzt. Visionärer Pioniergeist neben jahrtausendealter Beduinen-Tradition, kompromissloser Luxus und kosmopolitischer Glamour – willkommen in einer Realität aus 1001 Nacht. 
 nav: true
 nav-order: 3
 banner:
@@ -16,7 +16,13 @@ features:
     title: Tag 1
     subtitle: Shoppen & Genießen
     img: day1
+    img1: active1
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore suscipit, nam sit reprehenderit doloribus non dolore voluptatem autem ex adipisci, eius quibusdam placeat earum magnam aspernatur magni aut, doloremque rerum.
+    day-content1: block
+    subtitle1: Sinnliche Einstimmung
+    day-content2: block
+    img2: active2
+    day-content3: none
     link: "#one-link"
 
   - id: two
@@ -53,11 +59,23 @@ features:
     description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore suscipit, nam sit reprehenderit doloribus non dolore voluptatem autem ex adipisci, eius quibusdam placeat earum magnam aspernatur magni aut, doloremque rerum.
     link: "#six-link"
 
-
-thumnails:
-
-
 ---
+<!--
+thumbnails:
+
+  - id: active1
+    title: Sinnliche Einstimmung
+    description: Wie tief verwurzelt die Beduinen-Kultur in Abu Dhabi ist, hört, sieht und riecht man nicht nur auf den farbenprächtigen Lebensmittel-Märkten.
+
+  - id: active2
+    title: High-End-Shopping
+    description: Ob traditionelle Märkte, exklusive Luxus-Boutiquen oder mit Markenshops gepflasterte Malls – in Abu Dhabi wird der Einkauf zum Event.
+
+  - id: active3
+    title: High-End-Shopping
+    description: Ob traditionelle Märkte, exklusive Luxus-Boutiquen oder mit Markenshops gepflasterte Malls – in Abu Dhabi wird der Einkauf zum Event./-->
+
+
 
 <div class="bg--light vpad--xxl">
   <div class="container">
@@ -72,31 +90,55 @@ thumnails:
 {% for feature in page.features %}
   <div class="{% cycle 'bg--white', 'bg--light' %}">
     <div class="container">
-      <div id="{{feature.id}}" class="vpad--md">
-        <div class="vpad--xxl width width--xl text--center">
-          <h2 class="title title--xl">{{feature.title}}</h2>
+      <div id="{{feature.id}}" class="vpad--lg">
+        <div class="vpad--xs width width--xl text--center">
+          <h2 class="title title--xl text--upper">{{feature.title}}</h2>
           <div class="space--lg"></div>
         <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{feature.img}}.jpg')"></div>
         <div class="space--lg"></div>
             <h4 class="title title--md">{{feature.subtitle}}</h4>
           <p>{{feature.description}}</p>
-          <div class="space--lg"></div>
-          <div class="row row--gutters-md">
-            <!-- thumbnails /-->
-                <div class="col col--lg-6 col--xxl-4 text--center">
-                <div class="pt-highlight-shadow">
-                  <div class="highlight__image bg-img bg-img--16-9" style="background-image:url('{{site.img}}/content/{{page.id}}/highlight3.jpg');"></div>
-                  <div class="highlight__text boxpad--lg bg--white">
-                  <h4 class="core-title core-title--xs text--bold text--upper">Geotourismus</h4>
-                  <div class="space--xs"></div>Das geologische Erbe der Azoren schickt Sie auf eine Zeitreise zur...<br>
-                  <div class=" text--bold">Mehr erfahren</div>
-                </div>
-              </div>
-              </div>
-          </div>
+
         <!--  <a href="{{feature.link}}" class="btn btn--sm btn--orange">Zu den Angeboten</a>-->
         </div>
       </div>
+
+  <div class="row row--gutters-md">
+    <!-- thumbnails/-->
+
+        <div class="col col--xl-4 col--xxl-4 text--center" style="display:{{feature.day-content1}};">
+        <div class="pt-highlight-shadow">
+          <div class="highlight__image bg-img bg-img--16-9" style="background-image:url('{{site.img}}/content/{{page.id}}/{{feature.img1}}.jpg');"></div>
+          <div class="highlight__text boxpad--lg bg--white">
+          <h5 class="core-title core-title--xs text--bold">{{feature.subtitle1}}</h5>
+          <div class="space--xs"></div>{{feature.description}}<br>
+
+        </div>
+      </div>
+    </div>
+    <div class="col col--xl-4 col--xxl-4 text--center" style="display:{{feature.day-content2}};">
+    <div class="pt-highlight-shadow">
+      <div class="highlight__image bg-img bg-img--16-9" style="background-image:url('{{site.img}}/content/{{page.id}}/{{feature.img2}}.jpg');"></div>
+      <div class="highlight__text boxpad--lg bg--white">
+      <h4 class="core-title core-title--xs text--bold text--upper">{{feature.day-content.title}}</h4>
+      <div class="space--xs"></div>{{feature.day-content}}<br>
+
     </div>
   </div>
+</div>
+<div class="col col--xl-4 col--xxl-4 text--center" style="display:{{feature.day-content3}};">
+<div class="pt-highlight-shadow">
+  <div class="highlight__image bg-img bg-img--16-9" style="background-image:url('{{site.img}}/content/{{page.id}}/highlight3.jpg'); "></div>
+  <div class="highlight__text boxpad--lg bg--white">
+  <h4 class="core-title core-title--xs text--bold text--upper">{{feature.day-content.title}}</h4>
+  <div class="space--xs"></div>{{feature.day-content}}<br>
+
+</div>
+</div>
+</div>
+
+
+
+  </div></div>
+  <div class="space--xxl"></div></div>
 {% endfor %}

@@ -13,6 +13,18 @@
 /*style="background-image: url('{{site.img}}/content/{{page.id}}/hero.jpg'); background-attachment:fixed; background-color:rgba(0,0,0,0.8);"*/
 
 .abu-button{
+  background-color: rgba(228, 3, 42, 1);
+    border-radius: 2px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    transition: all ease 0.4s;
+    border: none;
+    padding: 16px 28px;
+    cursor: pointer
+}
+.abu-button:hover{
   background-color: rgba(228, 3, 42, 0.75);
     border-radius: 2px;
     font-size: 0.9rem;

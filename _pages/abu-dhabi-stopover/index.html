@@ -8,6 +8,7 @@ nav-order: 2
 banner:
   title: Stopover Abu Dhabi
   title-sub: Skyline-Fieber am Wüstenstrand
+
 content-pages: true
 
 features:
@@ -57,16 +58,18 @@ features:
 
 
 ---
+{% include nav/page.html content=page.features %}
 
-<div class="bg--light vpad--xxl">
+<div class=" vpad--xxl abu-parallax-dark" style="background-image:url('{{site.img}}/content/{{page.id}}/hero.jpg'); ">
+
   <div class="container">
-    <div class="width width--lg text--center text--xl">
+    <div class="width width--lg text--white text--center text--xl">
       <p>{{page.intro}}</p>
     </div>
   </div>
+
 </div>
 
-{% include nav/page.html content=page.features %}
 
 {% for feature in page.features %}
   <div class="{% cycle 'bg--white', 'bg--light' %}">

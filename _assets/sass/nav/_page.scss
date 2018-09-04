@@ -1,9 +1,9 @@
 // styles for the micropage nav
 
-$page-nav-height:    56px;
+$page-nav-height:    75px;
 $page-nav-height-sm: 44px;
 $page-nav-width-bp:  900px;
-$page-nav-color:     $grey-lightest;
+$page-nav-color:     #b2cad7;
 
 
 // global page nav height
@@ -87,18 +87,19 @@ $page-nav-color:     $grey-lightest;
     padding-left: $s4;
     padding-right: $s4;
     font-family: $font-core;
-    font-weight: 700;
-    font-size: 11px;
-    letter-spacing: .2em;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .1em;
     text-transform: uppercase;
     color: $grey-dark;
     transition: background-color $transition-time ease;
     white-space: nowrap;
-    // &.is-current {
-    //   background-color: rgba($grey-lighter,.5);
-    // }
+     &.is-current {
+       background-color: #ff00ff;
+       color: #ff0000;
+     }
     .no-touch &:hover {
-      background-color: rgba($grey-lighter,.4);
+      background-color: rgba($white,1);
     }
     @include bp($page-nav-width-bp){
       padding-left: $s0;

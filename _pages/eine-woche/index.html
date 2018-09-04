@@ -15,7 +15,7 @@ features:
   - id: one
     title: Tag 1
     subtitle: Shoppen & Genießen
-    description:
+    description: In den frühen Morgenstunden, wenn Abu Dhabis Souks zum Leben erwachen, ist die beste Zeit für eine Local Food Tour. Stimmen Sie sich bei authentischen Emirati Experiences auf die Wunder der Wüste ein, entfliehen Sie beim High-End-Shopping in majestätischen Malls der Mittagssonne und krönen Sie Ihren Abu-Dhabi-Auftakt mit einem Panorama-Spaziergang entlang der paradiesischen Corniche.
 
     day-content1: block
     subtitle1: Sinnliche Einstimmung
@@ -36,7 +36,7 @@ features:
   - id: two
     title: Tag 2
     subtitle: Wunder der Wüste
-    description:
+    description: In der Wüste schlummert die Seele der Vereinigten Arabischen Emirate. Wer dem Geheimnis von Abu Dhabi auf die Spur kommen möchte, findet zwischen endlosen Dünenlandschaften und Wolkenkratzern aus Sand die passenden Antworten. Ob auf dem Rücken eines Kamels, bei Jeep-Safaris zur höchsten Düne der Welt oder einer adrenalingeladenen Prise Dune Bashing.
 
     day-content1: block
     subtitle1: Arabische Entschleunigung
@@ -57,7 +57,7 @@ features:
   - id: three
     title: Tag 3
     subtitle: Vollgas auf Yas-Island
-    description: In einer schillernden Wüstenmetropole wie Abu Dhabi versprüht jede Tageszeit ihren eigenen Reiz. Ob morgendliche Spaziergänge über farbenfrohe Souks, eine mondäne Shoppingtour zur Mittagszeit oder ein romantischer Sonnenuntergang mit Skyline-Panorama – hier wird der Stopover zum facettenreichen Spektakel.
+    description: Yas-Island ist Abu Dhabis Synonym für Action und rekordverdächtigen Freizeitspaß. Auf dem Yas Marina Circuit blicken Sie hinter die Kulissen der Formel 1, bevor die rasanten Attraktionen der Ferrari World Sie in den Sitz drücken. Yas Waterworld, der Warner Bros. Themenpark und die Yas Mall runden das Angebot familiengerecht ab.
 
     day-content1: block
     subtitle1: Yas Marina Curcuit
@@ -78,7 +78,7 @@ features:
   - id: four
     title: Tag 4
     subtitle: Alte & neue Kulturschätze
-    description: In einer schillernden Wüstenmetropole wie Abu Dhabi versprüht jede Tageszeit ihren eigenen Reiz. Ob morgendliche Spaziergänge über farbenfrohe Souks, eine mondäne Shoppingtour zur Mittagszeit oder ein romantischer Sonnenuntergang mit Skyline-Panorama – hier wird der Stopover zum facettenreichen Spektakel.
+    description: In Sachen Kultur und Architektur greift Abu Dhabi nach den Sternen – mit der weit über die Grenzen des Emirats bestaunten Scheich-Zayid-Moschee, der kolossalen Kulturdichte von Saadiyat Island und ausufernder orientalischer Pracht in der Luxushotel-Ikone Emirates Palace. Schwindelerregender Weitblick vom Observation Deck 300 der Etihad Towers inklusive.
 
     day-content1: block
     subtitle1: Scheich-Zayid-Moschee
@@ -99,7 +99,7 @@ features:
   - id: five
     title: Tag 5
     subtitle: UNESCO-Anmut in Al Ain
-    description: In einer schillernden Wüstenmetropole wie Abu Dhabi versprüht jede Tageszeit ihren eigenen Reiz. Ob morgendliche Spaziergänge über farbenfrohe Souks, eine mondäne Shoppingtour zur Mittagszeit oder ein romantischer Sonnenuntergang mit Skyline-Panorama – hier wird der Stopover zum facettenreichen Spektakel.
+    description: Die atemberaubende Geschichte von Abu Dhabi und der Vereinigten Arabischen Emirate beginnt in der Wüste, genauer gesagt in einer blühenden Fata Morgana zu Füßen des Jebel Hafeed. Inmitten eines Meeres aus Dattelpalmen lädt die zum UNESCO-Welterbe gehörende Oasenstadt Al Ain mit historischen Forts und gelebter Beduinen-Kultur zum Entdecken ein.
 
     day-content1: block
     subtitle1: Oase Al Ain
@@ -120,7 +120,7 @@ features:
   - id: six
     title: Tag 6
     subtitle: Mangrovenwälder & Beachlife
-    description: In einer schillernden Wüstenmetropole wie Abu Dhabi versprüht jede Tageszeit ihren eigenen Reiz. Ob morgendliche Spaziergänge über farbenfrohe Souks, eine mondäne Shoppingtour zur Mittagszeit oder ein romantischer Sonnenuntergang mit Skyline-Panorama – hier wird der Stopover zum facettenreichen Spektakel.
+    description: So facettenreich wie exquisit präsentiert sich Abu Dhabi in Sachen Natur- und Hochgenuss. Die tropische Idylle des Mangrovendschungels bietet Schutz für Flamingos und Schildkröten, während öffentliche Strände und Beach Clubs exotische Tagträume am Persischen Golf versprechen. In exklusiven Hotel-Restaurants runden Kreationen von Starköchen aus aller Welt die Reise kulinarisch ab.
 
     day-content1: block
     subtitle1: Mangrovenwälder & Beachlife
@@ -156,17 +156,17 @@ thumbnails:
     title: High-End-Shopping
     description: Ob traditionelle Märkte, exklusive Luxus-Boutiquen oder mit Markenshops gepflasterte Malls – in Abu Dhabi wird der Einkauf zum Event./-->
 
+{% include nav/page.html content=page.features %}
 
-
-<div class="bg--light vpad--xxl">
+<div class=" vpad--xxl abu-parallax-dark" style="background-image:url('{{site.img}}/content/{{page.id}}/hero.jpg'); ">
   <div class="container">
-    <div class="width width--lg text--center text--xl">
+    <div class="width width--lg text--center text--white text--xl">
       <p>{{page.intro}}</p>
     </div>
   </div>
 </div>
 
-{% include nav/page.html content=page.features %}
+
 
 {% for feature in page.features %}
   <div class="{% cycle 'bg--white', 'bg--light' %}">

@@ -49,12 +49,21 @@ margin-top:-150px;
 
 /****** parallax-effect *******/
 
+.abu-parallax{
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.2);
+    background-blend-mode: multiply;
+
+}
 .abu-parallax-dark{
   background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.6);
     background-blend-mode: multiply;
 
 }

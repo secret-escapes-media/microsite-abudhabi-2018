@@ -1,5 +1,37 @@
 // general styles for the project that wouldn't be a reuseable component
 
+.abu-deco-font{
+  font-family: $font-deco;
+
+  &--xxxxl   { font-size: $s10; }
+  &--xxxl   { font-size: $s8; }
+  &--xxl    { font-size: $s7; }
+  &--xl     { font-size: $s6; }
+  &--lg     { font-size: $s5; }
+  &--md     { font-size: $s4; }
+  &--sm     { font-size: $s3; }
+  &--xs     { font-size: $s2; }
+  &--xxs    { font-size: $s1; }
+  &--xxxs   { font-size: $s0; }
+  @include bp($lg){
+    &--xxxl   { font-size: $s9; }
+    &--xxl    { font-size: $s8; }
+    &--xl     { font-size: $s7; }
+    &--lg     { font-size: $s6; }
+    &--md     { font-size: $s5; }
+    &--sm     { font-size: $s4; }
+    &--xs     { font-size: $s3; }
+    &--xxs    { font-size: $s2; }
+    &--xxxs   { font-size: $s1; }
+  }
+}
+.abu-font-color{
+  color: rgba(228, 3, 42, .8);
+}
+
+.abu-bg-color{
+  background-color: rgba(228, 3, 42, 1);
+}
 .abu-text-shadow {
     text-shadow: 0px 0px 25px rgba(0,0,0,0.8);
 }
@@ -12,8 +44,10 @@
 
 .abu-banner-margin-top{
 
-  /*margin-top:-200px;*/
+margin-top:-150px;
 }
+
+/****** parallax-effect *******/
 
 .abu-parallax-dark{
   background-attachment: fixed;
@@ -35,7 +69,7 @@
 
 }
 
-/*style="background-image: url('{{site.img}}/content/{{page.id}}/hero.jpg'); background-attachment:fixed; background-color:rgba(0,0,0,0.8);"*/
+/********** button styles **********/
 
 .abu-button{
   background-color: rgba(228, 3, 42, 1);
@@ -60,4 +94,31 @@
     border: none;
     padding: 16px 28px;
     cursor: pointer
+}
+
+
+/********** offer styles **********/
+
+.abu-offer-tile {
+    width: 75%;
+    margin: 70px 15%;
+    transition: all ease 0.3s;
+}
+
+.abu-offer-img {
+    width: 50%;
+    float: left;
+    background-size: cover;
+    padding-top: 50%;
+}
+
+.abu-offer-text {
+    width: 50%;
+    float: left;
+    background-color: #fff;
+    padding: 42px;
+}
+
+.clearfix {
+  overflow: auto;
 }

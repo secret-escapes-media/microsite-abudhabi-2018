@@ -20,7 +20,7 @@ $nav-color:          $white;
   position: relative;
   background-color: rgba($nav-color,0);
   text-align: center;
-margin-top: 20px;
+
   // NEEDS EXPLAINING LIKE THE CORE NAV OFFSET
   &__offset:before {
     // corrects header overlapping content
@@ -95,11 +95,12 @@ margin-top: 20px;
     transition: background-color $transition-time ease;
     white-space: nowrap;
     &.is-current      {
-      background-color: rgba($nav-color,0);
-    color: rgba($nav-color,1);}
+      color: rgba($nav-color,1);
+    
+  }
     .no-touch &:hover {
     border-bottom: 1px solid rgba($nav-color,.5);
-    height: 57px;
+    margin-top: 1px;
     }
     @include bp($nav-width-bp){
       padding-left: $s0;

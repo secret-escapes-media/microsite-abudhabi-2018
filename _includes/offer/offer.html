@@ -1,12 +1,12 @@
 
 
 
-<!-- offer 1 -->
+<!-- offer 1
 
-<div class="abu-offer-tile clearfix">
-    <a href="#">
-      <div class="abu-offer-img " style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')"></div>
-      <div class="abu-offer-text ">
+<div class="abu-offers-tile clearfix">
+    <a href="#" class="abu-offers-link">
+      <div class="abu-offers-img " style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')"></div>
+      <div class="abu-offers-text ">
         <h2>Elegantes Resort im Wüstenstaat</h2>
         <h4>Sheraton Abu Dhabi, Abu Dhabi, VAE</h4>
         <p>Luxusglück im glitzernden Abu Dhabi – inkl. Flügen, Transfers & Frühstück</p>
@@ -23,8 +23,41 @@
     </a>
 </div>
 
+<div class="abu-offer-tile clearfix">
+            <a href="#">
+                <div class="abu-offer-img item" style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')"></div>
+                <div class="abu-offer-text item">
+                <h3 class="core-title core-title--xs">{{offer.title}}</h3>
+                <h4 class="">{{offer.location}}</h4>
+                  <div class="offer__description">{{offer.description}}</div>
+<div class="vpad--md"></div>
+                  {% if offer.saved %}
+                    <div class="offer__saved">
+                      <div class="offer__saved-label">Save up to&nbsp;</div>
+                      <div class="offer__saved-percent">{{offer.saved}}%</div>
+                    </div>
+                    <div class="offer__separator"></div>
+                    <div class="offer__details">
+                      <div>From <span class="offer__price">£{{offer.price}}</span></div>
+                      <div class="text--sm">{{offer.price-description}}</div>
+                      <div class="js-offer-expires text--sm" data-expires="{{offer.expires}}"></div>
+                    </div>
 
-<!--
+                  </div>
+                  <div class="offer__bottom-right">
+                    <div class="offer__arrow"></div>
+                    <div class="abu-button">
+                        Zum Angebot
+                    </div>
+                  </div>
+                  {% endif %}
+
+
+
+            </a>
+        </div>
+
+/-->
 
 <div class="offer">
 
@@ -65,4 +98,4 @@
 
   </div>
 
-</div> /-->
+</div>

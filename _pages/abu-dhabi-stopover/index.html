@@ -8,6 +8,7 @@ nav-order: 2
 banner:
   title: Stopover Abu Dhabi
   title-sub: Skyline-Fieber am Wüstenstrand
+  page-nav: block
 
 content-pages: true
 
@@ -16,6 +17,9 @@ features:
   - id: one
     title: Tag 1
     subtitle: Shopping, Kultur & Nightlife
+    bg-img: bg-img11
+    opacity: --lighter
+    text-color:
     description: Shopping, sakrale Superlative und aussichtsreiche Barkultur – der perfekte Einstieg ins Abenteuer Abu Dhabi. Feilschen auf dem Souk mit anschließendem Shopping zwischen Flagship-Stores und Marken Outlets? Ganz normal. Die elfenbeinfarbene Silhouette der Scheich-Zayid-Moschee? Ein orientalischer Traum! Das mit abwechslungsreicher Barkultur untermalte Skyline-Panorama über den Dächern von Abu Dhabi? Schlichtweg atemberaubend.
 
     day-content1: block
@@ -32,11 +36,14 @@ features:
     subtitle3: Über den Dächern von Abu Dhabi
     day-description3: Wenn die Skyline von Abu Dhabi in den Abendstunden kunstvoll illuminiert zum Leben erwacht, ist eine Rooftop-Bar der perfekte Spot, um die Eindrücke des Tages bei einer von atemberaubenden Aussichten untermalten Cocktailstunde Revue passieren zu lassen. Zum Beispiel in der legendären Up & Below Bar im 12. Stock des Courtyard by Marriott World Trade Center, die dank Rooftop-Pool exklusive Erfrischung mit Skyline-Panorama garantiert. Oder in der futuristischen Skylite Lounge des Yas Hotel Abu Dhabi mit Blick über den Yas Marina Curcuit. Nicht schwindelfrei? Dann ist die stylishe Beach House Rooftop im Park Hyatt die perfekte Alternative, um malerische Sonnenuntergänge am Arabischen Meer zu genießen.
     img3: day1-3
-    link: "#one-link"
+
 
   - id: two
     title: Tag 2
     subtitle: Kultur & Beachlife auf Saadiyat Island
+    bg-img: bg-img13
+    opacity: --darker
+    text-color: text--white
     description: Neben reichhaltigen Shoppingmöglichkeiten und eklektischer Nobel-Hotellerie wartet Abu Dhabi allerorts mit traumhaften Bilderbuchstränden, kulturellem Zeitgeist und kulinarischer Finesse auf. Frei nach dem Motto „Wenn der Prophet nicht zum Berg kommt, muss der Berg zum Propheten“ wird der Tag auf Saadiyat Island zur kulturellen Weltreise.
 
     day-content1: block
@@ -53,33 +60,35 @@ features:
     subtitle3: Mediterraner Lifestyle im The Collection
     day-description3: Den Tag mediterran ausklingen lassen, über pittoreske Piazzas flanieren, sich unter dem strahlenden Sternenhimmel kulinarisch verwöhnen lassen – das alles und noch viel mehr bietet The Collection. Vom The St. Regis Saadiyat Island Resort orchestrierter Mittelmeer-Lifestyle zwischen Patios und Terrassen, der mit erstklassiger Restaurant-Auswahl, handverlesenen Edelboutiquen und Wellnesszentrum zum Verweilen einlädt. Nach dem Dinner geht es in nur ca. 20 Minuten zurück zum Abu Dhabi International Airport oder zurück ins Hotel – mit einem Kaleidoskop exotischer Eindrücke im Gepäck, die noch lange nach dem Stopover nachhallen werden.
     img3: day2-3
-    link: "#two-link"
 
 
 
 ---
-{% include nav/page.html content=page.features %}
 
-<div class=" vpad--xxl abu-parallax-dark" style="background-image:url('{{site.img}}/content/bg-img/bg-img2.jpg'); ">
+
+<div class=" vpad--lg abu-parallax--dark" style="background-image:url('{{site.img}}/content/{{page.id}}/hero.jpg');">
+
 
   <div class="container">
-    <div class="width width--lg text--white text--center text--xxl">
+    <div class="width width--xl text--white text--center text--xxl">
       <p>{{page.intro}}</p>
     </div>
   </div>
-
 </div>
+
+{% include nav/page.html content=page.features %}
+
 
 
 {% for feature in page.features %}
-  <div class="{% cycle 'bg--white', 'bg--light' %}">
-    <div class="container">
-      <div id="{{feature.id}}" class="vpad--lg">
-        <div class="width width--xl text--center">
-          <h2 class="abu-deco-font abu-deco-font--xxxxl abu-font-color">{{feature.title}}</h2>
-          <div class="space--lg"></div>
-            <h4 class="title title--md">{{feature.subtitle}}</h4>
-          <p>{{feature.description}}</p>
+<div class="{% cycle 'bg--white', 'bg--light' %} abu-parallax{{feature.opacity}}" style="background-image:url('{{site.img}}/content/bg-img/{{feature.bg-img}}.jpg'); ">
+  <div class="container {{feature.text-color}}">
+    <div id="{{feature.id}}" class="vpad--lg">
+      <div class="width width--xl text--center">
+        <h2 class="abu-deco-font abu-deco-font--xxxxl">{{feature.title}}</h2>
+        <div class="space--lg"></div>
+          <h4 class="title title--md ">{{feature.subtitle}}</h4>
+        <p>{{feature.description}}</p>
 
         <!--  <a href="{{feature.link}}" class="btn btn--sm btn--orange">Zu den Angeboten</a>-->
         </div>
@@ -97,20 +106,23 @@ features:
             <div class="space--md"></div>
 
         </div>
-      </div>
+
+    </div>
 
       <div class="bob bob--swap">
+
         <div class="bob__img">
-          <a href="#image-link">
-            <div class="bg-img bg-img--3-2" style="background-image:url('{{site.img}}/content/{{page.id}}/{{feature.img2}}.jpg');"></div>
-          </a>
+
+            <div class="bg-img bg-img--3-2 abu-bob-img" style="background-image:url('{{site.img}}/content/{{page.id}}/{{feature.img2}}.jpg');"></div>
+
         </div>
-        <div class="bob__text">
+        <div class="bob__text abu-bob-text">
            <div class="title title--xs">{{feature.subtitle2}}</div>
           <p>{{feature.day-description2}} </p>
           <div class="space--md"></div>
         </div>
       </div>
+
 
       <div class="bob" >
         <div class="bob__img">

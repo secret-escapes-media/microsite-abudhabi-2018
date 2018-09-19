@@ -6,9 +6,9 @@ intro: Fata Morgana oder wahr gewordener Traum? Wer sich die Zeit nimmt, das Emi
 nav: true
 nav-order: 3
 banner:
-  title: Eine Woche Abu Dhabi
-  title-sub: Lifestyle zwischen Dünen & Oasen
-content-pages: true
+  title: Eine Woche Abu&nbsp;Dhabi
+  title-sub: Lifestyle zwischen Dünen&nbsp;&&nbsp;Oasen
+
 
 features:
 
@@ -63,8 +63,8 @@ features:
   - id: three
     title: Tag 3
     bg-img: bg-img5
-    opacity: --darker
-    text-color: text--white
+    opacity: --lighter
+    text-color:
     subtitle: Vollgas auf Yas-Island
     description: Yas-Island ist Abu Dhabis Synonym für Action und rekordverdächtigen Freizeitspaß. Auf dem Yas Marina Circuit blicken Sie hinter die Kulissen der Formel 1, bevor die rasanten Attraktionen der Ferrari World Sie in den Sitz drücken. Die Warner Bros. World Abu Dhabi und die Yas Mall runden das Angebot familiengerecht ab.
 
@@ -135,8 +135,8 @@ features:
   - id: six
     title: Tag 6
     bg-img: bg-img12
-    opacity: --light
-    text-color:
+    opacity: --darker
+    text-color: text--white
     subtitle: Natur, Strände & Kulinarik
     description: So facettenreich wie exquisit präsentiert sich Abu Dhabi in Sachen Natur- und Hochgenuss. Die tropische Idylle des Mangrovendschungels bietet Schutz für Flamingos und Schildkröten, während öffentliche Strände und Beach Clubs exotische Tagträume am Arabischen Golf versprechen. In exklusiven Hotel-Restaurants runden Kreationen von Starköchen aus aller Welt die Reise kulinarisch ab.
 
@@ -176,7 +176,7 @@ thumbnails:
 
 
 
-<div class=" vpad--xl abu-parallax--dark" style="background-image:url('{{site.img}}/content/{{page.id}}/hero.jpg'); ">
+<div class=" vpad--xl abu-parallax--darker abu-remove-bg--black" style="background-image:url('{{site.img}}/content/{{page.id}}/hero.jpg'); ">
   <div class="container">
     <div class="width width--xl text--center text--white text--xxl">
       <p>{{page.intro}}</p>
@@ -184,10 +184,12 @@ thumbnails:
   </div>
 </div>
 
+
+
 {% include nav/page.html content=page.features %}
 
 {% for feature in page.features %}
-  <div class="{% cycle 'bg--white', 'bg--light' %} abu-parallax{{feature.opacity}}" style="background-image:url('{{site.img}}/content/bg-img/{{feature.bg-img}}.jpg'); ">
+  <div class="{% cycle 'bg--white', 'bg--light' %} abu-parallax{{feature.opacity}} abu-remove-bg" style="background-image:url('{{site.img}}/content/bg-img/{{feature.bg-img}}.jpg'); ">
     <div class="container {{feature.text-color}}">
       <div id="{{feature.id}}" class="vpad--lg">
         <div class="width width--xl text--center">
@@ -196,7 +198,7 @@ thumbnails:
             <h4 class="title title--md ">{{feature.subtitle}}</h4>
           <p>{{feature.description}}</p>
 
-        <!--  <a href="{{feature.link}}" class="btn btn--sm btn--orange">Zu den Angeboten</a>-->
+
         </div>
       </div>
 

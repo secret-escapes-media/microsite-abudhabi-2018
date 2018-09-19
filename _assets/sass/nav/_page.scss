@@ -1,8 +1,8 @@
 // styles for the micropage nav
 
 $page-nav-height:    75px;
-$page-nav-height-sm: 44px;
-$page-nav-width-bp:  900px;
+$page-nav-height-sm: 60px;
+$page-nav-width-bp:  620px;
 $page-nav-color:     #b2cad7;
 
 
@@ -39,7 +39,8 @@ $page-nav-color:     #b2cad7;
     bottom: 0;
     z-index: $z-nav-upper;
     width: $page-nav-height-sm;
-    background-image: url("../img/icons/nav-arrow-light.svg");
+    
+    background-image: url("../img/icons/nav-arrow.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: $page-nav-height-sm auto;
@@ -65,13 +66,13 @@ $page-nav-color:     #b2cad7;
     margin-left: auto;
     margin-right: auto;
     @include page-nav-height;
-    &:after {
+  /*  &:after {
       // additional spacing for end of list so content can scroll past the overlaid arrow icon
       content: '';
       min-width: $page-nav-height-sm;
       @include bp($md){ min-width: $page-nav-height; }
       @include bp($page-nav-width-bp){ display: none; }
-    }
+    }*/
   }
   &__item {
     display: flex;

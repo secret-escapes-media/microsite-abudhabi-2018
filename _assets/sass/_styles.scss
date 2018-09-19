@@ -19,17 +19,8 @@ line-height: 1.1em;
   &--xs     { font-size: $s2; }
   &--xxs    { font-size: $s1; }
   &--xxxs   { font-size: $s0; }
-  @include bp($lg){
-    &--xxxl   { font-size: $s9; }
-    &--xxl    { font-size: $s8; }
-    &--xl     { font-size: $s7; }
-    &--lg     { font-size: $s6; }
-    &--md     { font-size: $s5; }
-    &--sm     { font-size: $s4; }
-    &--xs     { font-size: $s3; }
-    &--xxs    { font-size: $s2; }
-    &--xxxs   { font-size: $s1; }
-  }
+
+
 }
 .abu-font-color{
   color: rgba(228, 3, 42, .8);
@@ -53,7 +44,17 @@ line-height: 1.1em;
 
 .abu-banner-margin-top{
 
-margin-top:-150px;
+margin-top:-20vh;
+}
+
+/* ==========================================================================
+   Show/Hide Content
+   ========================================================================== */
+.abu-hidden{display: none;}
+
+@media only screen and (max-width: 1024px) {
+  .abu-mob-hide{display: none;}
+.abu-hidden{ display: block;}
 }
 
 
@@ -70,19 +71,19 @@ margin-top:-150px;
 
     &--darkest   {
       background-attachment: fixed;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(5,20,40,0.9);
     background-blend-mode: multiply;
       background-position: center;
       background-size: cover;}
       &--darker   {
         background-attachment: fixed;
-      background-color: rgba(0,0,0,0.7);
+      background-color: rgba(5,20,40,0.8);
       background-blend-mode: multiply;
         background-position: center;
         background-size: cover;}
       &--dark   {
         background-attachment: fixed;
-        background-color: rgba(0,0,0,0.6);
+      background-color: rgba(5,20,40,0.7);
         background-blend-mode: multiply;
           background-position: center;
           background-size: cover;}
@@ -104,6 +105,58 @@ margin-top:-150px;
 }
 
 
+
+
+@media only screen and (max-width: 1024px) {
+
+.abu-bg-black{
+  background-color: #000;}
+
+.abu-remove-bg{
+
+  background-image: none!important;
+
+  &--black{
+
+    background-image: none!important;
+    background-color: #000;
+
+}
+
+}
+
+
+
+    .abu-parallax{
+      background-attachment: scroll;
+      background-size: cover;
+
+
+    &--darkest   {
+      background-attachment: scroll;
+      background-size: cover;
+    }
+      &--darker   {
+        background-attachment: scroll;
+        background-size: cover;
+      }
+      &--dark   {
+        background-attachment: scroll;
+        background-size: cover;
+        }
+
+      &--lighter   {
+        background-attachment: scroll;
+        background-size: cover;
+
+      }
+      &--light   {
+        background-attachment: scroll;
+        background-size: cover;
+     }
+      }
+
+}
 
 /* ==========================================================================
    Abu-Buttons
@@ -135,165 +188,7 @@ margin-top:-150px;
 }
 
 
-/******* Bob ****/
-/*
-.abu-bob{
-  background-color: #fff;
-  margin: 80px 0 80px 0;
-}
 
-.abu-bob-img{
-height: 100%!important;
-  margin-top: -30px!important;
-    margin-bottom: 0px!important;
-    margin-left:20px!important;
-      padding-right: 30px!important;
-}
-
-.abu-bob-text{
-
-
-    margin-left:50px!important;
-      margin-top: 35px !important;
-        margin-bottom: 35px !important;
-
-
-}*/
 .clearfix {
   overflow: auto;
 }
-
-
-
-/*
- ==========================================================================
-   Offers
-   ==========================================================================
-
-
-.abu-offer-tile {
-	width: 70%;
-	margin: 70px 15%;
-	transition:all ease 0.3s
-}
-
-
-.abu-overview-offers {
-	background: url(../images/overview-offers-bg.jpg) no-repeat center fixed;
-	padding-bottom: 90px;
-}
-.abu-offer-img {
-	width:50%;
-	float:left;
-	min-height: 250px;
-
-  float: left;
-	background-size:cover
-}
-
-.abu-offer-text {
-	width:50%;
-	float:right;
-	background-color: #fff;
-	padding: 42px;
-}
-
-.abu-offer-text h2 {
-	text-transform:none;
-	font-weight:600;
-	font-size:1.5rem;
-	margin-bottom:6px
-}
-
-.abu-offer-text h4 {
-	text-transform:none;
-	font-weight:600;
-	font-size:0.85rem;
-	color:#c32033;
-	margin-bottom:18px
-}
-
-.abu-offer-text p {
-	text-transform:none;
-	font-weight:300;
-	font-size:1rem;
-	color:#121212;
-	margin-bottom:24px
-}
-
-.abu-offer-text ul {
-	margin-bottom:24px
-}
-
-.abu-offer-text li {
-	text-transform:none;
-	font-weight:300;
-	font-size:1rem;
-	list-style:disc;
-	margin-left:18px
-}
-
-.offer-text .offer-price {
-	color:#c32033;
-}
-
-
-.abu-offer-text {
-	background-color:#eeeeee;
-	padding:14px 20px;
-	color:#595959;
-	transition:all ease 0.3s
-}
-
-.abu-offer-tile:hover .abu-offer-text .btn {
-	background-color:#c32033;
-	color:#fff
-}
-
-.abu-etihad-banner .abu-offer-tile:hover .abu-offer-text .btn {
-	background-color:#cb9800;
-	color:#fff
-}
-
-.abu-content-cta {
-    text-align:center;
-    margin:auto
-}
-
-.abu-offers {
-    width: 100%;
-    margin: 0px auto;
-    padding: 75px 0;
-    background-color: #fbe3ca;
-    background-size: 150px;
-    text-align: center;
-}
-
-
-@media (max-width:930px) {
-
-	.abu-offer-img {
-		width:100%;
-		float:left;
-		height: 300px;
-		background-size:cover
-	}
-
-	.abu-offer-text {
-		width:100%;
-		float:left;
-		background-color: #fff;
-		padding: 42px;
-	}
-}
-
-@media (max-width:570px) {
-
-	.abu-offer-tile {
-		width: 100%;
-		margin:0;
-		transition:all ease 0.3s
-	}
-
-
-} */

@@ -1,18 +1,18 @@
 # Site settings
-title: abu-dhabi-2018
+title: Abu Dhabi
 client:
-  name: Abu Dhabi
-  link: "https://visitabudhabi.ae/"
-core-se-link: https://www.secretescapes.com/current-sales
+  name: Abu Dhabi - Ihre außergewöhnliche Geschichte
+  link: "http://bit.ly/2xxsPKS"
+core-se-link: https://www.secretescapes.de/aktuelle-angebote
 description: >
   Abu Dhabi - Eine moderne Oase am Arabischen Golf, eingerahmt von spektakulären Mangrovenlandschaften, majestätischen Wüsten und exotischen Bilderbuchstränden – wie geschaffen für eine märchenhaft orientalische Auszeit voll futuristischer Highlights und architektonischer Superlative. Erleben Sie eine dynamische Metropole, in der Träume glamouröse Wirklichkeit werden bei einem kultivierten Citytrip oder einem exklusiven Strandurlaub zwischen Dünen und Mangroven.
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/abu-dhabi-2018" # the subpath of your site, e.g. /blog/
-img:     "/abu-dhabi-2018/_assets/img"
-css:     "/abu-dhabi-2018/_assets/css"
-js:      "/abu-dhabi-2018/_assets/js"
+baseurl: "/de/abu-dhabi-2018" # the subpath of your site, e.g. /blog/
+img:     "/de/abu-dhabi-2018/_assets/img"
+css:     "/de/abu-dhabi-2018/_assets/css"
+js:      "/de/abu-dhabi-2018/_assets/js"
 
 
 # Build settings

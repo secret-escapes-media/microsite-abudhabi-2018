@@ -6,11 +6,9 @@ intro: In einer schillernden Wüstenmetropole wie Abu Dhabi hat jede Tageszeit i
 nav: true
 nav-order: 2
 banner:
-  title: Stopover Abu Dhabi
+  title: Stopover Abu&nbsp;Dhabi
   title-sub: Skyline-Fieber am Wüstenstrand
-  page-nav: block
 
-content-pages: true
 
 features:
 
@@ -66,9 +64,7 @@ features:
 ---
 
 
-<div class=" vpad--xl abu-parallax--dark" style="background-image:url('{{site.img}}/content/{{page.id}}/hero.jpg');">
-
-
+<div class=" vpad--xl abu-parallax--darker abu-remove-bg--black" style="background-image:url('{{site.img}}/content/{{page.id}}/hero.jpg');">
   <div class="container">
     <div class="width width--xl text--white text--center text--xxl">
       <p>{{page.intro}}</p>
@@ -76,12 +72,16 @@ features:
   </div>
 </div>
 
+
+
+
+
 {% include nav/page.html content=page.features %}
 
 
 
 {% for feature in page.features %}
-<div class="{% cycle 'bg--white', 'bg--light' %} abu-parallax{{feature.opacity}}" style="background-image:url('{{site.img}}/content/bg-img/{{feature.bg-img}}.jpg'); ">
+<div class="{% cycle 'bg--white', 'bg--light' %} abu-parallax{{feature.opacity}} abu-remove-bg" style="background-image:url('{{site.img}}/content/bg-img/{{feature.bg-img}}.jpg'); ">
   <div class="container {{feature.text-color}}">
     <div id="{{feature.id}}" class="vpad--lg">
       <div class="width width--xl text--center">

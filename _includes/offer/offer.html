@@ -4,9 +4,14 @@
 
 <div class="offer">
 
-  <a class="offer__link" href="{{offer.link}}"><span class="btn abu-button">View Offer</span></a>
+  <a class="offer__link" href="{{offer.link}}"><span class="btn abu-button">Zum Angebot</span></a>
 
-  <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')"></div>
+  <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')">
+    {% if offer.flight-tag %}
+      <img class="flight-tag" src="{{site.img}}/icons/flights-incl.png" alt="FLÜGE INKLUSIVE">
+    {% endif %}
+
+  </div>
 
   <div class="offer__content text--left">
 
@@ -20,7 +25,7 @@
 
         {% if offer.saved %}
           <div class="offer__saved">
-            <div class="offer__saved-label ">Save up to&nbsp;</div>
+            <div class="offer__saved-label ">Sparen Sie bis zu</div>
             <div class="offer__saved-percent abu-bg-color abu-deco-font abu-deco-font--lg">{{offer.saved}}%</div>
           </div>
           <div class="offer__separator"></div>

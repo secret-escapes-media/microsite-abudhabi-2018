@@ -192,3 +192,19 @@ margin-top:-20vh;
 .clearfix {
   overflow: auto;
 }
+
+
+
+/*************** offer tag for included tag *******************/
+.flight-tag {
+  position: absolute;
+  top: $s-2;
+  left: $s-2;
+  display: block;
+  width: 50%;
+  @include bp($sm){
+    top: $s0;
+    left: $s0;
+    width: 146px;
+  }
+}

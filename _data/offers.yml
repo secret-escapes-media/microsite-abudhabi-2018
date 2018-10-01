@@ -17,15 +17,6 @@
   saved: 56
   link: http://bit.ly/2NE062c
 
-- title: Regeneration & Orient-Ästhetik mit Meerblick
-  id: fairmont-fujairah-resort
-  location: Fairmont Fujairah Beach Resort, Fudschaira, Vereinigte Arabische Emirate
-  description: Luxuriöser Geheimtipp am Golf von Oman – inkl. Frühstück oder Halbpension
-  price: 56
-  price-description: Pro Person - basierend auf 2 Personen
-  saved: 65
-  link: http://bit.ly/2NxiFou
-
 - title: Orientalisches Luxus-Märchen in Abu Dhabi
   id: bab-al-qasr
   location: Bab Al Qasr Hotel, Abu Dhabi, Vereinigte Arabische Emirate
@@ -40,8 +31,17 @@
   id: marriott-hotel
   location: Marriott Hotel Al Forsan, Abu Dhabi, Vereinigte Arabische Emirate
   description: Adrenalin pur beim F1-Spektakel – inkl. Etihad-Flügen, Formel 1-Tickets & Extras
-  price: 1.585
+  price: 1.595
   price-description: Pro Person für 5 Nächte
   saved: 27
   link: http://bit.ly/2I9oDGa
   flight-tag: true
+
+- title: Luxus-Residenz in den Emiraten
+  id: sofitel-abudhabi
+  location: Sofitel Abu Dhabi Corniche, Abu Dhabi, Vereinigte Arabische Emirate
+  description: Inkl. Frühstück, frühem Check-in & spätem Checkout, optional Lounge-Zugang & Extras
+  price: 48
+  price-description: Pro Person - basierend auf 2 Personen
+  saved: 76
+  link: http://bit.ly/2y5kqPp

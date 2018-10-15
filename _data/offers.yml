@@ -1,40 +1,30 @@
-- title: Orient-Glamour im neuen 5*-Hotel in Abu Dhabi
-  id: grand-hyatt
-  location: Grand Hyatt Abu Dhabi Hotel & Residences Emirates Pearl, Abu Dhabi, Vereinigte Arabische Emirate
-  description: 5*-Sonnentage an Abu Dhabis idyllischer Flaniermeile – inkl. Flügen, Frühstück & Transfers
-  price: 844
-  price-description: Pro Person für 6 Nächte
-  saved: 18
-  link: http://bit.ly/2OMbe9x
-  flight-tag: true
-
-- title: 5*-Aufenthalt mit Panoramablick in Abu Dhabi
-  id: fairmont-bab
-  location: Fairmont Bab Al Bahr, Vereinigte Arabische Emirate
-  description: 5*-Luxustraum mit 2 Privatstränden – inkl. Frühstück oder Halbpension
-  price: 48
+- title: 5*-Luxus mit Privatstrand in Abu&nbsp;Dhabi
+  id: bab-al-qasr-beach
+  location: Bab Al Qasr Beach Resort & Spa by Millennium, Abu Dhabi, VAE
+  description: Inkl. Frühstück oder All-inclusive, Transfers & optional Tickets für den Yas Island Themenpark
+  price: 85
   price-description: Pro Person - basierend auf 2 Personen
-  saved: 56
-  link: http://bit.ly/2NE062c
+  saved: 58
+  link: http://bit.ly/2C5pve3
 
-- title: Orientalisches Luxus-Märchen in Abu Dhabi
-  id: bab-al-qasr
-  location: Bab Al Qasr Hotel, Abu Dhabi, Vereinigte Arabische Emirate
-  description: Inkl. Flügen, Transfers, Frühstück & optionalen Extras
-  price: 866
+- title: Glanzmomente in Abu&nbsp;Dhabi
+  id: intercontinental
+  location: InterContinental Abu Dhabi, Vereinigte Arabische Emirate
+  description: Luxuriös entspannen im Emirat am Persischen Golf – inkl. Flügen, Transfers & Frühstück
+  price: 833
   price-description: Pro Person für 6 Nächte
-  saved: 26
-  link: http://bit.ly/2pDT0MJ
+  saved: 14
+  link: http://bit.ly/2yq5Z8D
   flight-tag: true
 
-- title: Formel 1 – Großer Preis von Abu Dhabi 2018
-  id: marriott-hotel
-  location: Marriott Hotel Al Forsan, Abu Dhabi, Vereinigte Arabische Emirate
-  description: Adrenalin pur beim F1-Spektakel – inkl. Etihad-Flügen, Formel 1-Tickets & Extras
-  price: 1.595
-  price-description: Pro Person für 5 Nächte
-  saved: 27
-  link: http://bit.ly/2I9oDGa
+- title: Glamour, Sightseeing & Superlative am Arabischen Golf
+  id: radisson-blu
+  location: Radisson Blu Abu Dhabi Yas Island, Abu Dhabi, Vereinigte Arabische Emirate
+  description: Inkl. Flügen, Halbpension, Transfers & Extras
+  price: 855
+  price-description: Pro Person für 6 Nächte
+  saved: 15
+  link: http://bit.ly/2P8esUV
   flight-tag: true
 
 - title: Luxus-Residenz in den Emiraten
@@ -45,3 +35,12 @@
   price-description: Pro Person - basierend auf 2 Personen
   saved: 76
   link: http://bit.ly/2y5kqPp
+
+- title: Der orientalische Zauber Abu Dhabis
+  id: corniche-hotel
+  location: Corniche Hotel Abu Dhabi, Vereinigte Arabische Emirate
+  description: Elegante Junior-Suite mit Blick auf das Meer – inkl. Halbpension
+  price: 66
+  price-description: Pro Person - basierend auf 2 Personen
+  saved: 65
+  link: http://bit.ly/2OZ7G7j

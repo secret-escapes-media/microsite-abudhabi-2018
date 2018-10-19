@@ -7,35 +7,6 @@
   saved: 58
   link: http://bit.ly/2C5pve3
 
-- title: Glanzmomente in Abu&nbsp;Dhabi
-  id: intercontinental
-  location: InterContinental Abu Dhabi, Vereinigte Arabische Emirate
-  description: Luxuriös entspannen im Emirat am Persischen Golf – inkl. Flügen, Transfers & Frühstück
-  price: 833
-  price-description: Pro Person für 6 Nächte
-  saved: 14
-  link: http://bit.ly/2yq5Z8D
-  flight-tag: true
-
-- title: Glamour, Sightseeing & Superlative am Arabischen Golf
-  id: radisson-blu
-  location: Radisson Blu Abu Dhabi Yas Island, Abu Dhabi, Vereinigte Arabische Emirate
-  description: Inkl. Flügen, Halbpension, Transfers & Extras
-  price: 855
-  price-description: Pro Person für 6 Nächte
-  saved: 15
-  link: http://bit.ly/2P8esUV
-  flight-tag: true
-
-- title: Luxus-Residenz in den Emiraten
-  id: sofitel-abudhabi
-  location: Sofitel Abu Dhabi Corniche, Abu Dhabi, Vereinigte Arabische Emirate
-  description: Inkl. Frühstück, frühem Check-in & spätem Checkout, optional Lounge-Zugang & Extras
-  price: 62
-  price-description: Pro Person - basierend auf 2 Personen
-  saved: 76
-  link: http://bit.ly/2y5kqPp
-
 - title: Der orientalische Zauber Abu Dhabis
   id: corniche-hotel
   location: Corniche Hotel Abu Dhabi, Vereinigte Arabische Emirate
@@ -44,3 +15,23 @@
   price-description: Pro Person - basierend auf 2 Personen
   saved: 65
   link: http://bit.ly/2OZ7G7j
+
+- title: Emirate-Glanz in Abu&nbsp;Dhabi
+  id: radisson-blu
+  location: Radisson Blu Yas Island, Abu Dhabi, Vereinigte Arabische Emirate
+  description: Standard-Zimmer mit Plaza-Blick inkl. Nonstop-Flügen, Halbpension & Transfers
+  price: 740
+  price-description: Pro Person für 5 Nächte
+  saved: 26
+  link: http://bit.ly/2CT9E3w
+  flight-tag: true
+
+- title: Glanzmomente in Abu&nbsp;Dhabi
+  id: InterContinental
+  location: InterContinental Abu Dhabi, Vereinigte Arabische Emirate
+  description: Luxuriös entspannen im Emirat am Persischen Golf – inkl. Flügen, Transfers & Frühstück
+  price: 833
+  price-description: Pro Person für 6 Nächte
+  saved: 14
+  link: http://bit.ly/2yq5Z8D
+  flight-tag: true
